@@ -1,5 +1,5 @@
 {% set name = "puccinialin" %}
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/puccinialin-{{ version }}.tar.gz
-  sha256: 6e7abbded7127faafd23f3dd6a1b3f221c33e2778c91adb76b9e1b0a90068e53
+  sha256: 30480edcfbf02dbc20581d7e08b86db298f97794593ecd28c22b8b1a0f40cfd9
 
 build:
   entry_points:
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - uv-build
+    - flit-core
     - pip
   run:
     - python >={{ python_min }}
