@@ -19,10 +19,11 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - hatchling
+    - uv-build
     - pip
   run:
     - python >={{ python_min }}
+    - filelock >=3.19.1,<4.0.0
     - httpx >=0.28.1,<0.29
     - platformdirs >=4.3.6,<5
     - tqdm >=4.67.1,<5
