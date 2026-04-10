@@ -1,5 +1,5 @@
 {% set name = "puccinialin" %}
-{% set version = "0.1.8" %}
+{% set version = "0.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/puccinialin-{{ version }}.tar.gz
-  sha256: e19f6316967ae100bf3fb92d8af95e3cec11ce0de58acd2f1a0bca835403a394
+  sha256: 8bbdd25e7bc51f63104ee81ab8647e2537e4598a063da027e7f5379c82e3468a
 
 build:
   entry_points:
